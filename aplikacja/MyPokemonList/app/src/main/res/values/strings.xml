@@ -1,0 +1,77 @@
+<resources>
+    <!-- APP NAME -->
+    <string name="app_name">MyPokemonList</string>
+
+    <!-- REGISTER -->
+    <string name="register_uploadPhoto_button">Upload Photo</string>
+    <string name="register_profileImageDescription">Profile picture is not required, but will be used in Leaderboards</string>
+    <string name="register_radioButtonValor">Valor</string>
+    <string name="register_radioButtonMystic">Mystic</string>
+    <string name="register_radioButtonInstinct">Instinct</string>
+    <string name="register_nick_hint">Nickname</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password1_hint">Password</string>
+    <string name="register_password2_hint">Confirm Password</string>
+    <string name="register_register_button">Register</string>
+    <string name="register_already_have_account">I already have account</string>
+
+    <!-- LOGIN -->
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_login_button">Login</string>
+    <string name="login_no_account">I want to create account</string>
+
+    <!-- POKEDEX -->
+    <string name="pokedex_loading">Loading...</string>
+    <string name="pokedex_pokemon_id">id</string>
+    <string name="pokedex_pokemon_image_desc">PokemonImage</string>
+    <string name="pokedex_pokemon_name">Pokemon Name</string>
+
+    <!-- POKEMON -->
+    <string name="pokemon_imageView_description">PokemonImage</string>
+    <string name="pokemon_name">Pokemon name</string>
+    <string name="pokemon_gen">Gen: </string>
+    <string name="pokemon_gen_value">Gen Name</string>
+    <string name="pokemon_type">Type: </string>
+    <string name="pokemon_type_value">Pokemon Type</string>
+    <string name="pokemon_inGame">In game: </string>
+    <string name="pokemon_inGame_value">Yes/No </string>
+    <string name="pokemon_shiny">Shiny available: </string>
+    <string name="pokemon_shinyValue">Yes/No</string>
+    <string name="pokemon_catched_switch">In Pokedex</string>
+    <string name="pokemon_lucky_switch">Lucky</string>
+    <string name="pokemon_shiny_switch">Shiny</string>
+
+    <string name="generation_one">Kanto</string>
+    <!-- LEADERBOARDS -->
+    <string name="leaderboards_userName">123456789012345</string>
+    <string name="leaderboards_pokedex">Dex</string>
+    <string name="leaderboards_pokedexCount">999</string>
+    <string name="leaderboards_lucky">Lucky</string>
+    <string name="leaderboards_luckydexCount">999</string>
+    <string name="leaderboards_shiny">Shiny</string>
+    <string name="leaderboards_ShinyCount">999</string>
+    <string name="leaderboards_total">Total</string>
+    <string name="leaderboards_totalPoints">9999</string>
+
+
+    <!-- ABOUT -->
+    <string name="about_info1">MyPokemonList is not affiliated with Niantic Inc., The Pokemon Company, Creatures Inc., GAME FREAK Inc. or Nintendo.</string>
+    <string name="about_info2">Pokemon, images and All Respective Names are Trademark © of Nintendo 1996-2020</string>
+    <string name="about_info3">Pokemon GO is Trademark © of Niantic, Inc.</string>
+    <string name="about_credits">Credits:Sprites - TheArtificial</string>
+    <string name="about_version">Application Version: 1.0</string>
+    <string name="about_lastUpdate">Date of last update: 03.12.2020</string>
+
+    <!-- SETTINGS -->
+    <string name="settings_setting_darkmode">Dark Mode</string>
+    <string name="settings_setting_something">Something</string>
+    <string name="settings_delete_account_button">Delete Account</string>
+
+    <!-- MENU -->
+    <string name="menu_leaderboards">Leaderboards</string>
+    <string name="menu_about">About</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+
+</resources>

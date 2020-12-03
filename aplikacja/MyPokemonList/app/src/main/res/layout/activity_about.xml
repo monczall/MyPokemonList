@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/about" />
+
+    <TextView
+        android:id="@+id/info1_textView_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/about_info1"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/info2_textView_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/about_info2"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="@+id/info1_textView_about"
+        app:layout_constraintStart_toStartOf="@+id/info1_textView_about"
+        app:layout_constraintTop_toBottomOf="@+id/info1_textView_about" />
+
+    <TextView
+        android:id="@+id/info3_textView_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/about_info3"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="@+id/info2_textView_about"
+        app:layout_constraintStart_toStartOf="@+id/info2_textView_about"
+        app:layout_constraintTop_toBottomOf="@+id/info2_textView_about" />
+
+    <TextView
+        android:id="@+id/credits_textView_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/about_credits"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="@+id/info3_textView_about"
+        app:layout_constraintStart_toStartOf="@+id/info3_textView_about"
+        app:layout_constraintTop_toBottomOf="@+id/info3_textView_about" />
+
+    <TextView
+        android:id="@+id/version_textView_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/about_version"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="@+id/credits_textView_about"
+        app:layout_constraintStart_toStartOf="@+id/credits_textView_about"
+        app:layout_constraintTop_toBottomOf="@+id/credits_textView_about" />
+
+    <TextView
+        android:id="@+id/lastUpdate_textView_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/about_lastUpdate"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="@+id/version_textView_about"
+        app:layout_constraintStart_toStartOf="@+id/version_textView_about"
+        app:layout_constraintTop_toBottomOf="@+id/version_textView_about" />
+</androidx.constraintlayout.widget.ConstraintLayout>

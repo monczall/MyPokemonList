@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".PokemonActivity">
+
+    <ImageView
+        android:id="@+id/pokemon_imageView_pokemon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/pokemon_imageView_description"
+        app:layout_constraintBottom_toBottomOf="@+id/czyShiny_textView_pokemon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nazwaPokemona_textView_pokemon"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nazwaPokemona_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/pokemon_name"
+        android:textColor="@color/mainText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_imageView_pokemon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generacja_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pokemon_gen"
+        android:textColor="@color/mainText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_imageView_pokemon"
+        app:layout_constraintTop_toBottomOf="@+id/nazwaPokemona_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/generacjaValue_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/pokemon_gen_value"
+        android:textColor="@color/altText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/generacja_textView_pokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/generacja_textView_pokemon"
+        app:layout_constraintTop_toTopOf="@+id/generacja_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/typ_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pokemon_type"
+        android:textColor="@color/mainText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_imageView_pokemon"
+        app:layout_constraintTop_toBottomOf="@+id/generacja_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/typValue_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/pokemon_type_value"
+        android:textColor="@color/altText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/typ_textView_pokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/typ_textView_pokemon"
+        app:layout_constraintTop_toTopOf="@+id/typ_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/czyDostepny_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pokemon_inGame"
+        android:textColor="@color/mainText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_imageView_pokemon"
+        app:layout_constraintTop_toBottomOf="@+id/typ_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/czyDostepnyValue_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/pokemon_inGame_value"
+        android:textColor="@color/altText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/czyDostepny_textView_pokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/czyDostepny_textView_pokemon"
+        app:layout_constraintTop_toTopOf="@+id/czyDostepny_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/czyShiny_textView_pokemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pokemon_shiny"
+        android:textColor="@color/mainText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_imageView_pokemon"
+        app:layout_constraintTop_toBottomOf="@+id/czyDostepny_textView_pokemon" />
+
+    <TextView
+        android:id="@+id/czyShinyValue_textView_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/pokemon_shinyValue"
+        android:textColor="@color/altText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/czyShiny_textView_pokemon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/czyShiny_textView_pokemon2"
+        app:layout_constraintTop_toTopOf="@+id/czyShiny_textView_pokemon2" />
+
+    <Switch
+        android:id="@+id/pokedex_switch_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/pokemon_catched_switch"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toTopOf="@+id/lucky_switch_pokedex"
+        app:layout_constraintEnd_toEndOf="@+id/lucky_switch_pokedex"
+        app:layout_constraintStart_toStartOf="@+id/lucky_switch_pokedex" />
+
+    <Switch
+        android:id="@+id/lucky_switch_pokedex"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="@string/pokemon_lucky_switch"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Switch
+        android:id="@+id/shiny_switch_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/pokemon_shiny_switch"
+        android:textColor="@color/mainText"
+        app:layout_constraintEnd_toEndOf="@+id/lucky_switch_pokedex"
+        app:layout_constraintStart_toStartOf="@+id/lucky_switch_pokedex"
+        app:layout_constraintTop_toBottomOf="@+id/lucky_switch_pokedex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

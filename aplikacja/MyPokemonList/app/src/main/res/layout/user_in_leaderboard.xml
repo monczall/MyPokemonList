@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/leaderboard">
+
+    <TextView
+        android:id="@+id/id_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/pokedex_pokemon_id"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar_leaderboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/avatar_leaderboard" />
+
+    <ImageView
+        android:id="@+id/prize_imageView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar_leaderboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/avatar_leaderboard"
+        app:srcCompat="@drawable/menu_item_leaderboards"
+        app:tint="@color/mainText" />
+
+    <ImageView
+        android:id="@+id/avatar_leaderboard"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prize_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/nickname_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/leaderboards_userName"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/avatar_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/avatar_leaderboard" />
+
+    <ImageView
+        android:id="@+id/pokedex_imageView_leaderboard"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="205dp"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar_leaderboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/avatar_leaderboard"
+        app:srcCompat="@drawable/pokedex_icon"
+        app:tint="@color/mainText" />
+
+    <TextView
+        android:id="@+id/pokedexCount_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leaderboards_pokedexCount"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/pokedex_imageView_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/pokedex_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/pokedex_imageView_leaderboard" />
+
+    <TextView
+        android:id="@+id/pokedexTitle_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/leaderboards_pokedex"
+        app:layout_constraintBottom_toTopOf="@+id/pokedex_imageView_leaderboard"
+        app:layout_constraintEnd_toEndOf="@+id/pokedexCount_textView_leaderboard"
+        app:layout_constraintStart_toStartOf="@+id/pokedex_imageView_leaderboard" />
+
+    <ImageView
+        android:id="@+id/lucky_imageView_leaderboard"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pokedex_imageView_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/pokedex_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/pokedex_imageView_leaderboard"
+        app:srcCompat="@drawable/lucky_icon"
+        app:tint="@color/mainText" />
+
+    <TextView
+        android:id="@+id/luckyCount_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leaderboards_luckydexCount"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/lucky_imageView_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/lucky_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/lucky_imageView_leaderboard" />
+
+    <TextView
+        android:id="@+id/luckyTitle_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/leaderboards_lucky"
+        app:layout_constraintBottom_toTopOf="@+id/lucky_imageView_leaderboard"
+        app:layout_constraintEnd_toEndOf="@+id/luckyCount_textView_leaderboard"
+        app:layout_constraintStart_toStartOf="@+id/lucky_imageView_leaderboard" />
+
+    <ImageView
+        android:id="@+id/shiny_imageView_leaderboard"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:rotation="30"
+        app:layout_constraintBottom_toBottomOf="@+id/lucky_imageView_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/lucky_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/lucky_imageView_leaderboard"
+        app:srcCompat="@drawable/shiny_icon"
+        app:tint="@color/mainText" />
+
+    <TextView
+        android:id="@+id/shinyCount_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leaderboards_ShinyCount"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/shiny_imageView_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/shiny_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/shiny_imageView_leaderboard" />
+
+    <TextView
+        android:id="@+id/shinyTitle_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/leaderboards_shiny"
+        app:layout_constraintBottom_toTopOf="@+id/shiny_imageView_leaderboard"
+        app:layout_constraintEnd_toEndOf="@+id/shinyCount_textView_leaderboard"
+        app:layout_constraintStart_toStartOf="@+id/shiny_imageView_leaderboard" />
+
+    <ImageView
+        android:id="@+id/totalPoints_imageView_leaderboard"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shiny_imageView_leaderboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shiny_imageView_leaderboard"
+        app:srcCompat="@drawable/total_points_icon"
+        app:tint="@color/mainText" />
+
+    <TextView
+        android:id="@+id/totalCount_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leaderboards_totalPoints"
+        android:textColor="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/totalPoints_imageView_leaderboard"
+        app:layout_constraintStart_toEndOf="@+id/totalPoints_imageView_leaderboard"
+        app:layout_constraintTop_toTopOf="@+id/totalPoints_imageView_leaderboard" />
+
+    <TextView
+        android:id="@+id/totalTitle_textView_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/leaderboards_total"
+        app:layout_constraintBottom_toTopOf="@+id/totalPoints_imageView_leaderboard"
+        app:layout_constraintEnd_toEndOf="@+id/totalCount_textView_leaderboard"
+        app:layout_constraintStart_toStartOf="@+id/totalPoints_imageView_leaderboard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

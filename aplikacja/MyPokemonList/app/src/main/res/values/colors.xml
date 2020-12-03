@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#757575</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="imageBorder">#121212</color>
+    <color name="mainText">#212121</color>
+    <color name="altText">#757575</color>
+
+    <color name="mainBackground">#EEEEEE</color>
+    <color name="icontToolbar">#757575</color>
+    <color name="mainToolbar">#424242</color>
+
+    <color name="pokemonNotRegistered">#616161</color>
+    <color name="pokemonRegistered">#1565C0</color>
+    <color name="pokemonLucky">#F9A825</color>
+
+    <color name="leaderboardFirst">#ffd500</color>
+    <color name="leaderboardSecond">#C0C0C0</color>
+    <color name="leaderboardThird">#B08D57</color>
+    <color name="leaderboard">#30475E</color>
+
+</resources>
